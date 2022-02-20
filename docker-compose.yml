@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  ts-node-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./src:/home/node/app/src
+      - ./nodemon.json:/home/node/app/nodemon.json
+    container_name: ts-node-docker
+    expose:
+      - '3000'
+    ports:
+      - '3000:3000'
+    command: npm run dev
+    mem_limit: 1024m
+  mongodb:
+    image: 'bitnami/mongodb:latest'
+    ports:
+      - 27017:27017
+    environment:
+      - MONGODB_DATABASE=test
+      - MONGODB_USERNAME=dev
+      - MONGODB_PASSWORD=secret
+      - MONGODB_ROOT_PASSWORD=secret

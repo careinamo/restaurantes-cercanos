@@ -1,0 +1,49 @@
+{
+    "name": "logysto",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node dist/index.js",
+        "build": "tsc -p .",
+        "ts:node": "ts-node src/index.ts",
+        "dev": "nodemon",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint src/**/*.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/axios": "^0.14.0",
+        "@types/bcryptjs": "^2.4.2",
+        "@types/dotenv-safe": "^8.1.2",
+        "@types/express": "^4.17.13",
+        "@types/jest": "^27.4.0",
+        "@types/jsonwebtoken": "^8.5.8",
+        "@types/mongoose": "^5.11.97",
+        "@types/morgan": "^1.9.3",
+        "@typescript-eslint/eslint-plugin": "^5.9.0",
+        "@typescript-eslint/parser": "^5.9.0",
+        "eslint": "^8.6.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-airbnb-typescript": "^16.1.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-prettier": "^4.0.0",
+        "jest": "^27.4.7",
+        "nodemon": "^2.0.15",
+        "prettier": "^2.5.1",
+        "ts-jest": "^27.1.2",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.5"
+    },
+    "dependencies": {
+        "axios": "^0.25.0",
+        "bcryptjs": "^2.4.3",
+        "dotenv-safe": "^8.2.0",
+        "express": "^4.17.2",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.1.7",
+        "morgan": "^1.10.0"
+    }
+}
